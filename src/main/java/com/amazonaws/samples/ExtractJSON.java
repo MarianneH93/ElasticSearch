@@ -59,7 +59,7 @@ public class ExtractJSON {
 	// Code sample from https://github.com/aws/aws-sdk-java/issues/861
 	
 	private static final String REGION = "us-east-1"; // region that your ES cluster is deployed to eg "us-west-2";
-	private static final String ES_ENDPOINT = "https://search-comp327nnd-ujpccvnyq4wv5lwk3hpdzmrmii.us-east-1.es.amazonaws.com/"; // endpoint of your ES cluster eg "http://blah-asdflasjfd.us-west-2.es.amazon.com"
+	private static final String ES_ENDPOINT = "https://search-comp327nnd-ujpccvnyq4wv5lwk3hpdzmrmii.us-east-1.es.amazonaws.com"; // endpoint of your ES cluster eg "http://blah-asdflasjfd.us-west-2.es.amazon.com"
 	private static final AWSCredentials CREDENTIALS = new DefaultAWSCredentialsProviderChain().getCredentials();
 
 	public static void putDocument(String index, int id, String jsonPayload) {
